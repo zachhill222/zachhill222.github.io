@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body{
+  font-family: "Courier" monospace;
+  background-color: #f2f2f2;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  position: static;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  clear: none;
+  background-position: 10% 0%;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-repeat: no-repeat;
+}
+
+/*-------------- Header --------------*/
+.primary_header {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  clear: none;
+  border: thick outset #000000;
+  box-shadow: 0px 0px;
+  height: 60px;
+}
+
+.primary_header h1 {
+  text-align: center;
+  color: black;
+  font: monospace;
+  font-size: 3em;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+/*---------------- Sub Header ----------------*/
+.sub_header {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  clear: none;
+  border: thick outset #000000;
+  box-shadow: 0px 0px;
+  height: 20px;
+}
+
+.sub_header a {
+  text-align: center;
+  padding-left: 50px;
+}
+
+
+/*-------------- About Me --------------*/
+.about_me {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  clear: none;
+}
+
+.about_me h1 {
+  text-align: left;
+  color: black;
+  font: monospace;
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.about_me p {
+  text-align: left;
+  color: black;
+  font-style: oblique;
+  font: monospace;
+  margin-left: 20px;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.about_me img{
+  width: 20%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*----------------- Upcoming Events ------------------*/
+.upcoming_events {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  clear: none;
+}
+
+.upcoming_events h1 {
+  text-align: left;
+  color: black;
+  font: monospace;
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.upcoming_events p {
+  text-align: left;
+  color: black;
+  font-style: oblique;
+  font: monospace;
+  margin-left: 20px;
+  font-size: 1em;
+  font-weight: lighter;
+}
