@@ -119,3 +119,32 @@ body{
   font-size: 1em;
   font-weight: lighter;
 }
+
+
+/*----------------- Projects ------------------*/
+.project_list {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  clear: none;
+}
+
+.project_list h1 {
+  text-align: left;
+  color: black;
+  font: monospace;
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.project_list p {
+  text-align: left;
+  color: black;
+  font-style: oblique;
+  font: monospace;
+  margin-left: 20px;
+  font-size: 1em;
+  font-weight: lighter;
+}
