@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{../mysty}
+\addbibresource{../bibliography.bib}
+
+\title{What is a Number?}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+The author is unaware of an universally accepted definition of ``number'' that unifies all of the standard notions. The tempting definition of \textit{a set of mathematical objects with which one can do arithmetic with} seems too large (likely including all fields) and simultaneously too restricting (likely excluding the natural numbers), depending on what one means by ``arithmetic.'' Instead, we will define the standard sets: the natural numbers ($\N$), the integers ($\Z$), the rational numbers ($\Q$), the real numbers ($\R$), and the complex numbers ($\C$).
+
+
+\section{The Natural Numbers}\label{sec:naturals}
+In order to define the natural numbers, we must have a notion of what a \textit{set} is.
+
+\defn[set]{
+	A set is a (possibly empty) collection of mathematical or abstract objects.
+}
+
+This definition is completely unsatisfactory in general, but it will serve our purposes for now. \cite{HalmosNST} We will define the natural numbers by the Peano axioms.
+
+\ax{
+	Let $\newsymbol{N}{\N}{Natural Numbers}$ denote the set of all natural numbers. We take (axiomatically) that:
+	\begin{enumerate}[i)]
+		\item $1\in\N$
+		\item If $a\in\N$, then $a$ has a \textit{successor} $S(a)$ and $S(a)\in\N$
+		\item 
+	\end{enumerate}
+}
+
+
+
+
+\section*{List of Symbols}
+\PrintListOfSymbols
+
+\printbibliography
+
+\end{document}

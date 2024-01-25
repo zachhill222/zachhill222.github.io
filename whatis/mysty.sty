@@ -1,0 +1,52 @@
+\usepackage{amsfonts, amsmath, amsthm}	%standard
+\usepackage{lstdoc,longtable,amssymb}	%used for list of symbols
+\usepackage{enumerate}					%used for decorating lists
+\usepackage{biblatex}
+
+
+\author{Zachary Hilliard}
+\date{}
+
+%define sets
+\newcommand{\N}{\mathbb{N}} %natural numbers {1,2,3,...}
+\newcommand{\Z}{\mathbb{Z}} %integers {...,-2,-1,0,1,2,...}
+\newcommand{\Q}{\mathbb{Q}} %rational numbers {A/B with A in \Z and B in \N}
+\newcommand{\R}{\mathbb{R}} %real numbers defined by Dedekind cuts or Cauchy sequences
+\newcommand{\C}{\mathbb{C}} %complex numbers {A+Bi with }
+\newcommand{\F}{\mathbb{F}}
+
+
+%define math environments
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{ex}{Example}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+
+%table of symbols: https://tex.stackexchange.com/questions/156393/creating-a-simple-list-of-symbols
+\makeatletter
+
+\def\symbollist{}
+
+\def\newsymbol#1#2#3{\label{symbol#1}#2\long\expandafter\gdef\csname createNewSymbol#1\endcsname{$#2$ & & #3 & & \pageref{symbol#1}\\}\lst@AddTo\symbollist{createNewSymbol#1,}}
+	
+\def\PrintListOfSymbols{%
+	\lst@BubbleSort{\symbollist}
+	\renewcommand*{\arraystretch}{1.1} 
+	\begin{longtable}{r p{.01\textwidth} p{.8\textwidth} p{.01\textwidth} l}
+		\@for \i:=\symbollist\do{%
+			\csname\i\endcsname }
+	\end{longtable}
+}
+\makeatother
