@@ -76,6 +76,8 @@ body{
 }
 
 .about_me p {
+  overflow: auto;
+  display: block;
   text-align: left;
   color: black;
   font-style: oblique;
