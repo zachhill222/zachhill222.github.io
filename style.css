@@ -151,3 +151,9 @@ body{
   font-size: 1em;
   font-weight: lighter;
 }
+
+
+/*---------list spacing*/
+li {
+  margin: 10px 0;
+}
